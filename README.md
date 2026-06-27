@@ -52,7 +52,7 @@ restructuring needed.
 | 1.0 General Security Concepts | vol1 | ✅ Complete (1.1–1.4) |
 | 2.0 Threats, Vulnerabilities & Mitigations | vol2 | ✅ Complete (2.1–2.5) |
 | 3.0 Security Architecture | vol3 | ✅ Complete (3.1–3.4) |
-| 4.0 Security Operations | vol4 | ⏳ Planned |
+| 4.0 Security Operations | vol4 | ✅ Complete (4.1–4.9) |
 | 5.0 Security Program Management & Oversight | vol5 | ✅ Complete (5.1–5.6) |
 
 See the [full Table of Contents](00-TABLE-OF-CONTENTS.md) for every objective.
@@ -87,8 +87,19 @@ See the [full Table of Contents](00-TABLE-OF-CONTENTS.md) for every objective.
 | [3.3](vol3/3.3-data-protection.md) | Compare and contrast concepts and strategies to protect data |
 | [3.4](vol3/3.4-resilience-recovery.md) | Explain the importance of resilience and recovery in security architecture |
 
-### Volume 4 — Domain 4.0: Security Operations
-*(planned)*
+### Volume 4 — Domain 4.0: Security Operations ✅
+
+| Objective | Title |
+|-----------|-------|
+| [4.1](vol4/4.1-secure-computing.md) | Given a scenario, apply common security techniques to computing resources |
+| [4.2](vol4/4.2-asset-management.md) | Explain the security implications of proper hardware, software, and data asset management |
+| [4.3](vol4/4.3-vulnerability-management.md) | Explain various activities associated with vulnerability management |
+| [4.4](vol4/4.4-monitoring.md) | Explain security alerting and monitoring concepts and tools |
+| [4.5](vol4/4.5-enterprise-capabilities.md) | Given a scenario, modify enterprise capabilities to enhance security |
+| [4.6](vol4/4.6-iam.md) | Given a scenario, implement and maintain identity and access management |
+| [4.7](vol4/4.7-automation-orchestration.md) | Explain the importance of automation and orchestration related to secure operations |
+| [4.8](vol4/4.8-incident-response.md) | Explain appropriate incident response activities |
+| [4.9](vol4/4.9-investigation-data.md) | Given a scenario, use data sources to support an investigation |
 
 ### Volume 5 — Domain 5.0: Security Program Management and Oversight ✅
 
