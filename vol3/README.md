@@ -1,8 +1,0 @@
-# Volume 3 — Domain 3.0: Security Architecture
-
-Objectives 3.1–3.4. Chapters are added here as I write them.
-
-- 3.1 Compare and contrast security implications of different architecture models
-- 3.2 Given a scenario, apply security principles to secure enterprise infrastructure
-- 3.3 Compare and contrast concepts and strategies to protect data
-- 3.4 Explain the importance of resilience and recovery in security architecture
