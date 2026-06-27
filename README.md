@@ -1,60 +1,107 @@
-# The Definitive CompTIA Security+ (SY0-701) Textbook Series
+# CompTIA Security+ (SY0-701) — A Deep-Dive Study Textbook
 
-**Author:** Numan Khalid Bhat
-**Co-authored with an AI cybersecurity educator**
-**Source of truth:** CompTIA Security+ SY0-701 Certification Exam Objectives, Version 5.0 (© 2023 CompTIA, Inc.)
+In-depth, objective-by-objective study notes I'm writing as I prepare for the
+CompTIA Security+ (SY0-701) exam and a SOC / blue team career. Each official exam
+objective is taught from first principles — not just *what* a concept is, but
+*why* it exists, *how* it works, how attackers abuse it, and how defenders detect
+and mitigate it.
 
-> Every objective number and official objective statement in this series is reproduced verbatim
-> from the official SY0-701 Exam Objectives document. Sub-bullets are taken from the same source
-> and become numbered subsections per the project's subsection rule.
+> These are my own study notes, structured against the official **CompTIA Security+
+> SY0-701 Exam Objectives, Version 5.0**. Every objective number and statement is
+> taken from that document. Work in progress — I add objectives as I study them.
+
+## Why this exists
+
+Watching a course once is passive. Writing the material in my own structured words
+— with comparison tables, diagrams, attacker/defender views, and practice
+questions — is how I move concepts from "saw it once" to "can explain and apply
+it." Keeping it public keeps it organized and might help others studying the same
+exam.
+
+## How each chapter is structured
+
+Every objective follows the same consistent template: official statement →
+concept overview → deep technical explanation → why it exists / how it works →
+advantages & disadvantages → real-world & enterprise usage → attacker &
+defender perspectives → detection & mitigation → best practices → comparison
+tables → ASCII diagrams → exam tips → common question styles → interview notes →
+common mistakes → memory tricks → key facts → quick revision sheet → practice
+questions → PBQ-style scenarios.
+
+## Repository layout
+
+```
+security-plus-textbook/
+├── README.md                  ← this file (master index)
+├── 00-TABLE-OF-CONTENTS.md    ← all 5 domains, official objective numbering
+├── vol1/  Domain 1 — General Security Concepts            (1.1–1.4)
+├── vol2/  Domain 2 — Threats, Vulnerabilities & Mitigations (2.1–2.5)
+├── vol3/  Domain 3 — Security Architecture                (3.1–3.4)
+├── vol4/  Domain 4 — Security Operations                  (4.1–4.9)
+└── vol5/  Domain 5 — Security Program Management & Oversight (5.1–5.6)
+```
+
+Each objective is a single markdown file named `N.N-short-title.md` inside its
+volume folder. New objectives drop straight into the right `volN/` folder — no
+restructuring needed.
+
+## Progress
+
+| Domain | Volume | Status |
+|--------|--------|--------|
+| 1.0 General Security Concepts | vol1 | ✅ Complete (1.1–1.4) |
+| 2.0 Threats, Vulnerabilities & Mitigations | vol2 | ⏳ Planned |
+| 3.0 Security Architecture | vol3 | ⏳ Planned |
+| 4.0 Security Operations | vol4 | ⏳ Planned |
+| 5.0 Security Program Management & Oversight | vol5 | ✅ Complete (5.1–5.6) |
+
+See the [full Table of Contents](00-TABLE-OF-CONTENTS.md) for every objective.
+
+## Chapters
+
+### Volume 1 — Domain 1.0: General Security Concepts ✅
+
+| Objective | Title |
+|-----------|-------|
+| [1.1](vol1/1.1-security-controls.md) | Compare and contrast various types of security controls |
+| [1.2](vol1/1.2-fundamental-concepts.md) | Summarize fundamental security concepts |
+| [1.3](vol1/1.3-change-management.md) | Explain the importance of change management processes and the impact to security |
+| [1.4](vol1/1.4-cryptographic-solutions.md) | Explain the importance of using appropriate cryptographic solutions |
+
+### Volume 2 — Domain 2.0: Threats, Vulnerabilities, and Mitigations
+*(in progress — chapters added here as I write them)*
+
+### Volume 3 — Domain 3.0: Security Architecture
+*(planned)*
+
+### Volume 4 — Domain 4.0: Security Operations
+*(planned)*
+
+### Volume 5 — Domain 5.0: Security Program Management and Oversight ✅
+
+| Objective | Title |
+|-----------|-------|
+| [5.1](vol5/5.1-security-governance.md) | Summarize elements of effective security governance |
+| [5.2](vol5/5.2-risk-management.md) | Explain elements of the risk management process |
+| [5.3](vol5/5.3-third-party-risk.md) | Explain the processes associated with third-party risk assessment and management |
+| [5.4](vol5/5.4-security-compliance.md) | Summarize elements of effective security compliance |
+| [5.5](vol5/5.5-audits-assessments.md) | Explain types and purposes of audits and assessments |
+| [5.6](vol5/5.6-security-awareness.md) | Given a scenario, implement security awareness practices |
+
+## About me
+
+Aspiring SOC Analyst transitioning into cybersecurity (B.Tech, NIT Srinagar).
+Currently studying for CompTIA Security+ and building hands-on labs and tools.
+Other repos: [python-security-tools](https://github.com/NumanBhat1/python-security-tools),
+[linux-security-scripts](https://github.com/NumanBhat1/linux-security-scripts),
+[hackthebox-writeups](https://github.com/NumanBhat1/hackthebox-writeups),
+[cybersecurity-notes](https://github.com/NumanBhat1/cybersecurity-notes).
 
 ---
 
-## MASTER TABLE OF CONTENTS (7 Volumes)
-
----
-
-# VOLUME 1 — Domain 1.0: General Security Concepts (12%)
-
-### Objective 1.1 — Compare and contrast various types of security controls.
-- 1.1.1 Categories: Technical
-- 1.1.2 Categories: Managerial
-- 1.1.3 Categories: Operational
-- 1.1.4 Categories: Physical
-- 1.1.5 Control types: Preventive
-- 1.1.6 Control types: Deterrent
-- 1.1.7 Control types: Detective
-- 1.1.8 Control types: Corrective
-- 1.1.9 Control types: Compensating
-- 1.1.10 Control types: Directive
-
-### Objective 1.2 — Summarize fundamental security concepts.
-- 1.2.1 Confidentiality, Integrity, and Availability (CIA)
-- 1.2.2 Non-repudiation
-- 1.2.3 Authentication, Authorization, and Accounting (AAA)
-  - Authenticating people
-  - Authenticating systems
-  - Authorization models
-- 1.2.4 Gap analysis
-- 1.2.5 Zero Trust — Control Plane (Adaptive identity, Threat scope reduction, Policy-driven access control, Policy Administrator, Policy Engine)
-- 1.2.6 Zero Trust — Data Plane (Implicit trust zones, Subject/System, Policy Enforcement Point)
-- 1.2.7 Physical security (Bollards, Access control vestibule, Fencing, Video surveillance, Security guard, Access badge, Lighting, Sensors: Infrared, Pressure, Microwave, Ultrasonic)
-- 1.2.8 Deception and disruption technology (Honeypot, Honeynet, Honeyfile, Honeytoken)
-
-### Objective 1.3 — Explain the importance of change management processes and the impact to security.
-- 1.3.1 Business processes impacting security operation (Approval process, Ownership, Stakeholders, Impact analysis, Test results, Backout plan, Maintenance window, Standard operating procedure)
-- 1.3.2 Technical implications (Allow lists/deny lists, Restricted activities, Downtime, Service restart, Application restart, Legacy applications, Dependencies)
-- 1.3.3 Documentation (Updating diagrams, Updating policies/procedures)
-- 1.3.4 Version control
-
-### Objective 1.4 — Explain the importance of using appropriate cryptographic solutions.
-- 1.4.1 Public key infrastructure (PKI) (Public key, Private key, Key escrow)
-- 1.4.2 Encryption — Level (Full-disk, Partition, File, Volume, Database, Record)
-- 1.4.3 Encryption — Transport/communication
-- 1.4.4 Encryption — Asymmetric
-- 1.4.5 Encryption — Symmetric
-- 1.4.6 Encryption — Key exchange
-- 1.4.7 Encryption — Algorithms
+*Source of truth: CompTIA Security+ SY0-701 Certification Exam Objectives, Version 5.0
+(© 2023 CompTIA, Inc.). This is independent study material and is not affiliated
+with or endorsed by CompTIA. "CompTIA" and "Security+" are trademarks of CompTIA, Inc.*
 - 1.4.8 Encryption — Key length
 - 1.4.9 Tools (Trusted Platform Module (TPM), Hardware security module (HSM), Key management system, Secure enclave)
 - 1.4.10 Obfuscation (Steganography, Tokenization, Data masking)
