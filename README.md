@@ -51,7 +51,7 @@ restructuring needed.
 |--------|--------|--------|
 | 1.0 General Security Concepts | vol1 | ✅ Complete (1.1–1.4) |
 | 2.0 Threats, Vulnerabilities & Mitigations | vol2 | ✅ Complete (2.1–2.5) |
-| 3.0 Security Architecture | vol3 | ⏳ Planned |
+| 3.0 Security Architecture | vol3 | ✅ Complete (3.1–3.4) |
 | 4.0 Security Operations | vol4 | ⏳ Planned |
 | 5.0 Security Program Management & Oversight | vol5 | ✅ Complete (5.1–5.6) |
 
@@ -78,8 +78,14 @@ See the [full Table of Contents](00-TABLE-OF-CONTENTS.md) for every objective.
 | [2.4](vol2/2.4-malicious-activity.md) | Given a scenario, analyze indicators of malicious activity |
 | [2.5](vol2/2.5-mitigation-techniques.md) | Explain the purpose of mitigation techniques used to secure the enterprise |
 
-### Volume 3 — Domain 3.0: Security Architecture
-*(planned)*
+### Volume 3 — Domain 3.0: Security Architecture ✅
+
+| Objective | Title |
+|-----------|-------|
+| [3.1](vol3/3.1-architecture-models.md) | Compare and contrast security implications of different architecture models |
+| [3.2](vol3/3.2-secure-infrastructure.md) | Given a scenario, apply security principles to secure enterprise infrastructure |
+| [3.3](vol3/3.3-data-protection.md) | Compare and contrast concepts and strategies to protect data |
+| [3.4](vol3/3.4-resilience-recovery.md) | Explain the importance of resilience and recovery in security architecture |
 
 ### Volume 4 — Domain 4.0: Security Operations
 *(planned)*
